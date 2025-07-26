@@ -99,6 +99,7 @@ const resetForm = () => {
   display: flex;
   gap: 15px;
   margin: 15px 0;
+  justify-content: center;
 }
 
 .blog-links a {
@@ -118,6 +119,7 @@ const resetForm = () => {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .form input {
