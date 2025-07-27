@@ -195,4 +195,42 @@ button:last-child {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
+
+@media (max-width: 768px) {
+  .crud-container {
+    padding: 10px;
+  }
+
+  .welcome-text {
+    font-size: 1.8em;
+  }
+
+  .blog-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  th, td {
+    padding: 8px 4px;
+  }
+
+  button {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
 </style>
