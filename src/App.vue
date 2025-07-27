@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import UserCrud from './components/UserCrud.vue'
+import UserCrud from './components/Home.vue'
 </script>
 
 <template>
