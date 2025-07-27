@@ -49,11 +49,12 @@ const resetForm = () => {
 
 <template>
   <div class="crud-container">
-    <h2 class="welcome-text"> Welcome to AWS First Cloud Journey v1 </h2>
+    <h2 class="welcome-text"> Welcome to AWS First Cloud Journey</h2>
     <div class="blog-links">
       <a href="https://hs-nguyen.hashnode.dev/" target="_blank">Visit my Hashnode Blog</a>
       <a href="https://www.linkedin.com/in/nguyen-huu-sang/" target="_blank">Linkedin Profile</a>
       <a href="https://cloudjourney.awsstudygroup.com/" target="_blank">AWS First Cloud Journey</a>
+      <a href="https://www.facebook.com/groups/660548818043427" target="_blank">AWS Study Group VN</a>
     </div>
     <form @submit.prevent="editingId ? updateUser() : addUser()" class="form">
       <input v-model="form.name" placeholder="Name" required />
