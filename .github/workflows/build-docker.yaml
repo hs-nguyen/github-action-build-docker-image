@@ -27,6 +27,7 @@ jobs:
         uses: docker/setup-buildx-action@v1
 
       - name: Build Docker image
+        id: build-image
         run: |
           echo "Logging in to Amazon ECR..."
           aws ecr get-login-password --region ${{ env.AWS-REGION }} | \
