@@ -7,7 +7,7 @@ env:
   AWS-REGION: ap-southeast-1
   name: Build and Push Docker Image
   ECR-REPOSITORY: test-cicd-github-action
-  ECR-REGISTRY: 891377055161.dkr.ecr.ap-southeast-1.amazonaws.com/test-cicd-github-action
+  ECR-REGISTRY: 891377055161.dkr.ecr.ap-southeast-1.amazonaws.com
   
 jobs:
   build:
@@ -40,6 +40,7 @@ jobs:
           docker tag ${{ env.ECR-REPOSITORY }}:latest ${{ env.ECR-REGISTRY }}/${{ env.ECR-REPOSITORY }}:latest
 
       - name: Push Docker image to ECR
+        id: push-image
         run: |
           echo "Pushing Docker image to ECR..."
           docker push ${{ env.ECR-REGISTRY }}/${{ env.ECR-REPOSITORY }}:latest  
